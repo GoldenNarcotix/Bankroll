@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            app:cardCornerRadius="4dp"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing" android:id="@+id/cardView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/textRedColorDesign"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/cb" android:id="@+id/txtMoyPay"/>
+                <TextView
+                        android:text="@string/uber_eats"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textRedColorDesign"
+                        android:id="@+id/txtTiersOpe"
+                        android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="26/01/2020"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textRedColorDesign"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_height="wrap_content" android:id="@+id/txtDateOpe"/>
+                <TextView
+                        android:text="True"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textRedColorDesign"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_height="wrap_content" android:id="@+id/txtRapprOpe"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_edit_operation"
+                            android:id="@+id/btnEdit" android:layout_weight="1"
+                            tools:ignore="VectorDrawableCompat" android:contentDescription="TODO"/>
+                    <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_delete_operation"
+                            android:id="@+id/btnDelete" tools:ignore="VectorDrawableCompat"
+                            android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                android:text="-45,00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:id="@+id/txtSommeOpe"
+                android:layout_gravity="right"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

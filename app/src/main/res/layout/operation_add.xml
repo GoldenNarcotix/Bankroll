@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/op_ration"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" android:id="@+id/txtOpe"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <DatePicker android:id="@+id/datBirth"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/tiers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/txtTiers"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="2"
+                    android:id="@+id/edtAddTiers" android:layout_weight="1"/>
+            <TextView
+                    android:text="@string/somme"
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtSomme" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="2"
+                    android:id="@+id/edtAddSomme" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" android:id="@+id/lstChoixMoyPay">
+
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/CB"
+                             android:checked="true"
+                             android:text="@string/carte_bleu"
+                             android:layout_weight="1">
+                </RadioButton>
+
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/Cheque"
+                             android:text="@string/cheque"
+                             android:layout_weight="1">
+                </RadioButton>
+
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/Virement"
+                             android:text="@string/virement"
+                             android:layout_weight="1">
+                </RadioButton>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/choixRappro" android:layout_weight="1"
+                    tools:text="Rapprochement"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="@string/annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btnCancel"/>
+        <Button
+                android:text="@string/ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/btnValidate" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

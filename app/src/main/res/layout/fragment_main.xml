@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@drawable/gradient"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            app:cardCornerRadius="4dp"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp" android:id="@+id/homeCardView">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center">
+                <TextView
+                        android:text="@string/solde_total"
+                        android:layout_width="wrap_content"
+                        android:textSize="30sp"
+                        android:textColor="@color/textRedColorDesign"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtSoldeTotal"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/open_sans_semibold"/>
+                <TextView
+                        android:text="@string/solde_total_somme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textRedColorDesign"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/open_sans_bold_italic"
+                        android:id="@+id/txtSolde"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_marginRight="10dp">
+                    <TextView
+                            android:text="@string/debit"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/textRedColorDesign"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_height="wrap_content" android:id="@+id/txtDebit"
+                    />
+                    <TextView
+                            android:text="@string/solde_debit"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/textRedColorDesign"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/open_sans_bold_italic"
+                            android:layout_height="wrap_content" android:id="@+id/txtSommeDebit"
+                            android:layout_gravity="bottom"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                    <TextView
+                            android:text="@string/cr_dit"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/textRedColorDesign"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_height="wrap_content" android:id="@+id/txtCredit" android:gravity="right"/>
+                    <TextView
+                            android:text="@string/solde_credit"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/textRedColorDesign"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/open_sans_bold_italic"
+                            android:layout_gravity="bottom|right"
+                            android:layout_height="wrap_content" android:id="@+id/txtSommeCredit"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Spinner android:layout_width="match_parent"
+             android:id="@+id/spinnerTiers"
+             android:layout_height="wrap_content"/>
+</LinearLayout>

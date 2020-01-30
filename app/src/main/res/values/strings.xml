@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Bankroll</string>
+    <string name="tab_text_1">Accueil</string>
+    <string name="tab_text_2">Opérations</string>
+    <string name="tab_text_3">Rapprochement</string>
+    <string name="solde_total">Solde Total :</string>
+    <string name="solde_total_somme">0.00 €</string>
+    <string name="choisir_date">Choisir Date</string>
+    <string name="cb">CB</string>
+    <string name="uber_eats">Uber Eats</string>
+    <string name="op_ration">Opération</string>
+    <string name="tiers">Tiers :</string>
+    <string name="somme">Somme :</string>
+    <string name="carte_bleu">Carte Bleu</string>
+    <string name="cheque">Cheque</string>
+    <string name="virement">Virement</string>
+    <string name="annuler">Annuler</string>
+    <string name="ok">OK</string>
+    <string name="debit">Débit</string>
+    <string name="solde_debit">0.00 €</string>
+    <string name="cr_dit">Crédit</string>
+    <string name="solde_credit">0.00 €</string>
+    <string name ="devise">€</string>
+    <string name="sole_du_relev">Solde du relevé :</string>
+    <string name="somme_du_compte">Somme du relevé</string>
+    <string name="somme_atteindre">Différence</string>
+    <string name="solde_atteindre">Différence (veuillez atteindre 0) :</string>
+    <string name="valider_rapprochement">Valider Rapprochement</string>
+    <string name="d_marrer_rapprochement">Démarrer Rapprochement</string>
+    <string name="rapprocher">Rapprochée</string>
+    <string name="non_rapprocher">Non rapprochée</string>
+    <string name="temp_rappro">Temporairement rapprochée</string>
+    <string name="sommeDiff">Somme</string>
+</resources>
